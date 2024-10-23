@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Playfair Display", serif;
+}
+.heading{
+  font-family: "Londrina Sketch", sans-serif;
+}
+.heading-w{
+  font-family: "Londrina Sketch", sans-serif;
+  font-size: 90px;
+}
