@@ -13,7 +13,7 @@ function Wishlist() {
 
   const dispatch = useDispatch()
 
-  const wishes = ()=>{
+  const wishes = (item)=>{
     dispatch(addItemToCart(item))
     dispatch(deleteWishlistItem(item.id))
   }
@@ -49,7 +49,8 @@ function Wishlist() {
         <div className='w-full mt-10 md:grid grid-cols-3'>
           <div></div>
           <div>
-            <img src="https://cdn.dribbble.com/users/530801/screenshots/2357094/present.gif" alt="" className='w-full h-90 mb-20' />
+            <img src="https://cdn.dribbble.com/users/530801/screenshots/2357094/present.gif" alt="" className='w-full h-90 ' />
+            <p className='text-center text-violet-800 mb-20 mt-4 text-xl'>Your Wishlist is <span className='text-red-600'>EMPTY</span></p>
           </div>
           <div></div>
         </div>

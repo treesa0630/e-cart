@@ -13,6 +13,7 @@ export const wishlistSlice = createSlice({
             state.push(action.payload)
         },
 
+        // to delete items from wishlist
         deleteWishlistItem : (state, action)=>{
            return state.filter((item)=>item.id != action.payload)
         }

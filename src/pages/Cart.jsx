@@ -18,8 +18,8 @@ function Cart() {
 
   const getTotal=()=>{
     if (cartArray?.length>0) 
-      {setTotal(cartArray?.map((items)=>items.price).reduce((n1,n2)=>n1+n2))
-
+      {
+        setTotal(cartArray?.map((items)=>items.price).reduce((n1,n2)=>n1+n2))
       }
   }
 
@@ -30,9 +30,9 @@ function Cart() {
     dispatch(emptyCart())
     navigate('/')
 
-    
   }
 
+  
   useEffect(()=>{
     getTotal()
   },[cartArray])
@@ -84,11 +84,11 @@ function Cart() {
 
 
       :
-      <div className='w-full mt-10 md:grid grid-cols-3'>
+      <div className='w-full md:grid grid-cols-3'>
         <div></div>
         <div className='flex justify-center items-center flex-col my-10'>
-          <img src="https://cdni.iconscout.com/illustration/premium/thumb/empty-cart-illustration-download-in-svg-png-gif-file-formats--wishlist-bucket-shopping-state-pack-design-development-illustrations-1800917.png?f=webp" alt=""  className='w-full h-80' />
-          <p className='text-center text-violet-800'>Your cart is empty</p>
+          <img src="https://schoolville.com/assets/img/empty-cart-illustration.gif" alt=""  className='w-full h-82' />
+          <p className='text-center text-violet-800 mb-20 mt-4 text-xl'>Your Cart is <span className='text-red-600'>EMPTY</span></p>
           <Link to={'/'}><button className='bg-green-600 text-white p-3 rounded mt-3'><FontAwesomeIcon icon={faBackward} className='me-2'/>BckHome</button></Link>
         </div>
         <div></div>
