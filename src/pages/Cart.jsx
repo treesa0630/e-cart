@@ -32,7 +32,7 @@ function Cart() {
 
   }
 
-  
+
   useEffect(()=>{
     getTotal()
   },[cartArray])
@@ -89,7 +89,7 @@ function Cart() {
         <div className='flex justify-center items-center flex-col my-10'>
           <img src="https://schoolville.com/assets/img/empty-cart-illustration.gif" alt=""  className='w-full h-82' />
           <p className='text-center text-violet-800 mb-20 mt-4 text-xl'>Your Cart is <span className='text-red-600'>EMPTY</span></p>
-          <Link to={'/'}><button className='bg-green-600 text-white p-3 rounded mt-3'><FontAwesomeIcon icon={faBackward} className='me-2'/>BckHome</button></Link>
+          <Link to={'/'}><button className='bg-green-600 text-white p-3 rounded mt-3'><FontAwesomeIcon icon={faBackward} className='me-2'/>Start Shopping</button></Link>
         </div>
         <div></div>
       </div>
